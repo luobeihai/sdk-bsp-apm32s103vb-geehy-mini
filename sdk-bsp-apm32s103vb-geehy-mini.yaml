@@ -1,0 +1,119 @@
+board:
+  buy_url_cn: N/A
+  buy_url_global: N/A
+  debug_interface: SWD
+  debugger: J-Link
+  description_en: APM32S103VB-MINI Board is a development board based on arm Cortex-M3
+    kernel developed by geehy. The development board leads out most of the IO, which
+    can completely evaluate the performance of apm32s103vb chip.
+  description_zh: APM32S103VB-MINI板是Geehy官方开发的基于ARM Cortex-M3内核的开发板，开发板引出了绝大部分IO，可以完整评估APM32S103VB芯片的性能。
+  emulator_machine: ''
+  large_image: documents/images/APM32S103VB-MINI.png
+  name: APM32S103VB-GEEHY-MINI
+  price_cn: N/A CNY
+  price_global: N/A USD
+  sale_contact_cn: https://www.geehy.com/
+  sale_contact_global: https://www.geehy.com/
+  small_image: documents/images/APM32S103VB-MINI-small.png
+  vendor: Geehy
+  version: 1.0.0
+chip:
+  chip_name: APM32S103VB
+  clock_source: HSE
+  device_vendor: Geehy
+  family_name: APM32
+  rx_name: PA10
+  series_name: APM32S1
+  source_freq: '8000000'
+  sub_series_name: APM32S103
+  target_freq: '720000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/APM32S103 MINI Board User Manual V1.0.pdf
+  title: APM32S103 MINI Board User Manual
+- category: sheet
+  file: documents/APM32S103x8xB datasheet V1.3.pdf
+  title: APM32S103x8xB datasheet
+- category: other
+  file: documents/APM32S103VB MINIBOARD V1.0.SchDoc.pdf
+  title: APM32S103VB MINIBOARD V1.0.SchDoc
+example_projects: []
+features:
+- 32bit arm Cortex-M3 kernel
+- 'Maximum operating frequency: 96MHz'
+- 'Flash: 128KB'
+- 'SRAM: 36KB'
+- 'USB：1 '
+- 'KEY: 2(PA0, PA1)'
+- 'RESET KEY: 1'
+- 'LED: 2(PE5, PE6)'
+- 'USART: 1 (It can be switched between usart1 and 2 through jumper cap)'
+- 'Debug interface : Standard JTAG / SWD'
+features_zh:
+- 32 位 ARM Cortex -M3 内核
+- 最高工作频率：96MHz
+- Flash：128KB
+- SRAM：36KB
+- 'USB：1 '
+- 按键：2（PA0、PA1）
+- 复位键：1
+- LED：2（PE5、PE6）
+- USART：1（可以通过跳线帽从USART1和2之间切换）
+- 调试接口：标准JTAG/SWD
+pkg_type: Board_Support_Packages
+pkg_vendor: Geehy
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: Template
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
